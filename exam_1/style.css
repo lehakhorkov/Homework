@@ -1,0 +1,385 @@
+:root{
+      --color1: rgb(24, 25, 24);
+      --color2: rgb(166, 172, 164);
+}
+
+.padd{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+nav{
+    background: linear-gradient(to left, var(--color1), var(--color2));
+}
+
+
+.baner img{
+    width: 100%;
+}
+
+h3{
+    text-align: center;
+}
+
+.card-content img{
+    width: 100%;
+    height: 100%;
+}
+
+nav ul a img{
+   width: 40%;
+   
+}
+
+.statya{
+    width: 70%;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.statya p{
+    font-size: 16pt;
+}
+
+.statya_2 p{
+    font-size: 16pt;
+}
+
+.persGR img{
+    width: 100%;
+}
+
+.personal{
+    width: 70%;
+    margin: auto;
+}
+
+.persGR{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /* margin-left: 20%;
+    margin-right: 20%; */
+    
+    gap: 2%;
+
+
+}
+
+.persH{
+    text-align: center;
+}
+
+
+
+.persPoz{
+    position: relative;
+    display: inline-block;
+}
+
+.persPozPoz{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    font-size: 16pt;
+    color: rgb(68, 64, 64);
+}
+
+.persPozPoz a img{
+    width: 100%;
+}
+
+.persPozPoz .socseti{
+    display: flex;
+    gap: 5%;
+}
+
+.persPozPoz .socseti a{
+    width: 30px;
+}
+
+.vrem-preim{
+    display: flex;
+    background-color: rgb(129, 194, 172);
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    gap: 5%;
+}
+
+.vrem{
+    text-align: center;
+    font-size: large;
+    background-color: white;
+    width: 400px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.vrem :nth-child(1){
+    font-weight: 800;
+}
+.preim{
+    width: 400px; 
+}
+
+.preim h2{
+    margin-top: 0;
+}
+
+.preim p, li{
+    font-size: 12pt;
+}
+
+.prices h2{
+  text-align: center;
+  font-weight: bold;
+  color: rgb(156, 158, 123);
+}
+
+.pricesGR{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5%;
+    width: 70%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.pricesGR>div{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px dotted rgb(156, 158, 123);
+}
+
+
+.pricesGR>div span{
+    font-size: 16pt;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+}
+
+.pricesGR>div :nth-child(2){
+    color: rgb(156, 158, 123);
+}
+
+
+.otzuv h2{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(156, 158, 123);
+}
+  
+.otzuvGR{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5%;
+    width: 70%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+  
+.otzuvGR>div{
+    display: flex;
+    align-items: start;
+    gap: 10%;
+    
+}
+ 
+.otzuvGR>div :nth-child(1){
+width: 100px;  
+}
+
+.otzuvGR>div :nth-child(2){
+width: 50%;  
+}
+
+.otzuvGR>div :nth-child(2) p{
+width: 100%;
+
+
+}
+
+.otzuvGR img{
+border-radius: 50%;
+border: 10px solid rgb(129, 194, 172);
+height: 100%;
+width: 1100%;
+}
+
+
+.otzuvGR p{
+font-size: 16pt;
+margin: none;
+}
+
+.otzuvGR>div :nth-child(2) :nth-child(2){
+color: rgb(156, 158, 123);
+}
+
+.formaBtn{
+    width: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(143, 149, 149);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+
+
+/* ----------------------------АДАПТАЦИЯ----------------------------------------------- */
+
+
+
+
+  @media screen and (min-width: 601px) and (max-width: 992px){
+   
+    .personal{
+        width: 85%;
+        margin: auto;
+        margin-bottom: 10%;
+    }
+    
+    .persGR{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    
+    .persPozPoz{      
+        top: 30%;
+        left: 5%;
+        font-size: 20pt;
+    }
+
+    .vrem-preim{  
+        flex-direction: column; 
+        margin-top: 5%;
+        margin-bottom: 5%;
+        gap: 2%;
+    }
+    
+    .vrem{
+        order: 2;
+    }
+    
+    .preim h2{
+        margin-top: 10%;
+    }
+   
+   .otzuv {
+    margin-top: 10%;
+   }
+  
+  .otzuvGR{
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(7, 1fr);
+      gap: 2%;
+      width: 70%;
+  }
+
+  .otzuvGR>div :nth-child(2){
+    width: 100%;  
+  }
+
+  .otzuvGR p{
+    font-size: 14pt;
+    margin-top: 0;
+  }
+
+  }
+
+  @media screen and (max-width: 600px){
+   
+    .personal{
+        width: 90%;
+    }
+    
+    .persGR{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 3fr) 1fr;
+        gap: 1%;
+    }
+    
+    .persPozPoz{      
+        top: 50%;
+        left: 5%;
+        font-size: 20pt;
+    }
+
+    .persPozPoz p{
+        margin: 5%;
+    }
+
+    .vrem-preim{  
+        flex-direction: column; 
+        margin-top: 5%;
+        margin-bottom: 5%;
+        gap: 2%;
+    }
+    
+    .vrem{
+        width: 300px;
+        order: 2;
+    }
+
+    .preim{
+        width: 300px;
+    }
+    
+    .preim h2{
+        margin-top: 10%;
+    }
+
+
+    .prices h2{
+        font-weight: normal;
+      }
+      
+      .pricesGR{
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(8, 1fr);
+          gap: 1%;
+          width: 90%;
+      }
+
+   .otzuv {
+    margin-top: 10%;
+   }
+
+   .otzuv h2{
+    font-weight: normal;
+}
+  
+  .otzuvGR{
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(7, 1fr);
+      gap: 2%;
+      width: 90%;
+  }
+
+  .otzuvGR>div :nth-child(2){
+    width: 100%;  
+  }
+
+  .otzuvGR p{
+    font-size: 14pt;
+    margin-top: 0;
+    margin-bottom: 3%;
+  }
+
+  }
+
