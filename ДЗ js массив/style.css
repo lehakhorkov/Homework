@@ -1,0 +1,7 @@
+.inp{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    width: 100px;
+}
