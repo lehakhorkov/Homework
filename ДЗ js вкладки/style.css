@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "oranien";
+    src: url("font/oranienbaum-regular-webfont.woff") format(woff),
+         url("font/oranienbaum-regular-webfont.woff2") format(woff2);
+}
+
+
+
+
+
+body{
+    background-color: rgb(213, 238, 233);
+}
+
+
+
+h1{
+    text-align: center;
+    font-family: 'oranien';
+}
+
+
+.tabs {
+    border: 1px solid #c0c9c4;
+    box-shadow: -2px 5px 5px 1px rgb(184, 182, 182);
+    padding: 10px;
+    margin: 50px;
+    /* border-radius: 5px; */
+    display: flex;
+    gap: 20px;
+    height: 700px;
+}
+
+.active {
+    font-weight: bold;
+}
+
+ul {
+    padding-left: 0;
+    padding-top: 10px;
+    /* display: flex; */ 
+    list-style: none;
+    overflow-y: scroll ;
+    width: 25%;
+
+
+}
+
+li{
+    height: 80px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-family: 'oranien';
+    
+}
+
+p{
+   font-family: 'oranien'; 
+   font-size: 12pt;
+}
+
+.tab {
+    cursor: pointer;
+    /* display: inline-block; */
+    border: 1px solid #c0c9c4;
+    padding: 5px 10px;
+   
+    box-shadow: -2px 5px 5px 1px rgb(184, 182, 182);
+    /* border-radius: 5px; */
+    font-size: 14pt;
+    
+}
+
+
+.main{
+    width: 70%;
+    padding: 30px;
+    
+}
+
+
+ul::-webkit-scrollbar {
+    width: 10px;
+  background-color: rgb(213, 238, 233);
+}
+
+ul::-webkit-scrollbar-thumb{
+    
+    border-radius: 10px;
+    background-color: rgb(201, 201, 208);
+}
+
+img{
+    margin-left: 5px;
+}
