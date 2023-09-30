@@ -1,0 +1,28 @@
+p{
+    margin: 0px 0px 5px 5px;
+    font-size: 16pt;
+}
+
+.out, .out_2, .out_3{
+    margin: 20px;
+    
+}
+
+
+body{
+   font-size: 16pt; 
+}
+label, input{
+    margin-right: 5px;
+}
+
+.ramka{
+    border: 1px dashed black;
+    width: max-content;
+    margin: 10px;
+    
+}
+
+
+
+
